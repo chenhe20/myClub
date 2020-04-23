@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071F10442449D29500D9509D /* StaffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F10432449D29500D9509D /* StaffDetailViewController.swift */; };
+		071F10462449EBB000D9509D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F10452449EBB000D9509D /* AccountViewController.swift */; };
+		072558ED24480EB6004A26CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072558EC24480EB6004A26CE /* AppDelegate.swift */; };
+		072558EF24480EB6004A26CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072558EE24480EB6004A26CE /* SceneDelegate.swift */; };
+		072558F124480EB6004A26CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072558F024480EB6004A26CE /* ViewController.swift */; };
+		072558F424480EB6004A26CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072558F224480EB6004A26CE /* Main.storyboard */; };
+		072558F724480EB6004A26CE /* myClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 072558F524480EB6004A26CE /* myClub.xcdatamodeld */; };
+		072558F924480EB7004A26CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072558F824480EB7004A26CE /* Assets.xcassets */; };
+		072558FC24480EB7004A26CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072558FA24480EB7004A26CE /* LaunchScreen.storyboard */; };
+		0725590424483F19004A26CE /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725590324483F19004A26CE /* EventViewController.swift */; };
+		0725590D2448BAFC004A26CE /* WageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725590C2448BAFC004A26CE /* WageViewController.swift */; };
+		0725591124497E3D004A26CE /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725591024497E3D004A26CE /* EventDetailViewController.swift */; };
+		07255913244986B0004A26CE /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07255912244986B0004A26CE /* StaffViewController.swift */; };
+		072DF33B2451A85800023AE0 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF33A2451A85800023AE0 /* Validation.swift */; };
+		072DF3422451C72400023AE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3412451C72400023AE0 /* DataManager.swift */; };
+		072DF3472451EFB100023AE0 /* MAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3462451EFB100023AE0 /* MAccountViewController.swift */; };
+		072DF3492451EFC500023AE0 /* MApplyForLeaveStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3482451EFC500023AE0 /* MApplyForLeaveStep1ViewController.swift */; };
+		072DF34B2451EFCE00023AE0 /* MApplyForLeaveStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF34A2451EFCE00023AE0 /* MApplyForLeaveStep2ViewController.swift */; };
+		072DF34D2451EFD600023AE0 /* MAttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF34C2451EFD500023AE0 /* MAttendanceViewController.swift */; };
+		072DF34F2451EFDE00023AE0 /* MEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF34E2451EFDE00023AE0 /* MEventDetailViewController.swift */; };
+		072DF3512451EFEA00023AE0 /* MEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3502451EFEA00023AE0 /* MEventViewController.swift */; };
+		072DF3532451EFF200023AE0 /* MStaffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3522451EFF200023AE0 /* MStaffDetailViewController.swift */; };
+		072DF3552451EFFE00023AE0 /* MStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3542451EFFE00023AE0 /* MStaffViewController.swift */; };
+		072DF3572451F00500023AE0 /* MTeamPlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3562451F00500023AE0 /* MTeamPlayerDetailViewController.swift */; };
+		072DF3592451F00D00023AE0 /* MAddContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3582451F00D00023AE0 /* MAddContractViewController.swift */; };
+		072DF35B2451F01200023AE0 /* MAddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF35A2451F01200023AE0 /* MAddEventViewController.swift */; };
+		072DF35D2451F01800023AE0 /* MAddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF35C2451F01800023AE0 /* MAddPlayerViewController.swift */; };
+		072DF35F2451F01F00023AE0 /* MAddStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF35E2451F01F00023AE0 /* MAddStaffViewController.swift */; };
+		072DF3612451F02700023AE0 /* MAddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3602451F02700023AE0 /* MAddTransactionViewController.swift */; };
+		072DF3632451F02B00023AE0 /* MAttendanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3622451F02B00023AE0 /* MAttendanceDetailViewController.swift */; };
+		072DF3652451F03000023AE0 /* MChangeContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3642451F03000023AE0 /* MChangeContractViewController.swift */; };
+		072DF3672451F03600023AE0 /* MChangeEventChooseParticipantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3662451F03600023AE0 /* MChangeEventChooseParticipantTableViewController.swift */; };
+		072DF3692451F03D00023AE0 /* MChangeEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3682451F03D00023AE0 /* MChangeEventDetailViewController.swift */; };
+		072DF36B2451F04400023AE0 /* MChangePlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF36A2451F04400023AE0 /* MChangePlayerDetailViewController.swift */; };
+		072DF36D2451F04900023AE0 /* MChangeStaffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF36C2451F04900023AE0 /* MChangeStaffDetailViewController.swift */; };
+		072DF36F2451F04F00023AE0 /* MChooseParticipantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF36E2451F04E00023AE0 /* MChooseParticipantTableViewController.swift */; };
+		072DF3712451F05600023AE0 /* MContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3702451F05600023AE0 /* MContractViewController.swift */; };
+		072DF3732451F05D00023AE0 /* MEditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3722451F05D00023AE0 /* MEditAccountViewController.swift */; };
+		072DF3752451F06300023AE0 /* MSalaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3742451F06300023AE0 /* MSalaryViewController.swift */; };
+		072DF3772451F06800023AE0 /* MTeamPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3762451F06800023AE0 /* MTeamPlayerViewController.swift */; };
+		072DF3792451F06D00023AE0 /* MTeamStaffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3782451F06D00023AE0 /* MTeamStaffDetailViewController.swift */; };
+		072DF37B2451F07300023AE0 /* MTeamStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF37A2451F07300023AE0 /* MTeamStaffViewController.swift */; };
+		072DF37D2451F07800023AE0 /* MWageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF37C2451F07800023AE0 /* MWageViewController.swift */; };
+		072DF37F2451F07D00023AE0 /* MTransactionDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF37E2451F07D00023AE0 /* MTransactionDetailInfoViewController.swift */; };
+		072DF3812451F10100023AE0 /* MChangeAttendanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3802451F10100023AE0 /* MChangeAttendanceDetailViewController.swift */; };
+		072DF3832451F10600023AE0 /* MChangeTransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3822451F10600023AE0 /* MChangeTransactionDetailViewController.swift */; };
+		072DF3852451F10A00023AE0 /* MContractDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072DF3842451F10A00023AE0 /* MContractDetailViewController.swift */; };
+		072DF390245211E100023AE0 /* StaffUserInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072DF38C245211E100023AE0 /* StaffUserInterface.storyboard */; };
+		072DF391245211E100023AE0 /* ManagerUserInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072DF38E245211E100023AE0 /* ManagerUserInterface.storyboard */; };
+		074E95D2244EEFAA00F93B8A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E95D1244EEFAA00F93B8A /* RegisterViewController.swift */; };
+		074E95D6244EFD4C00F93B8A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E95D5244EFD4C00F93B8A /* Login.swift */; };
+		074E95D8244EFD7000F93B8A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E95D7244EFD7000F93B8A /* DateFormatter.swift */; };
+		074E95DA244F474700F93B8A /* UpdateContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E95D9244F474700F93B8A /* UpdateContactViewController.swift */; };
+		07547E60244B1B3600289409 /* ApplyForLeaveStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07547E5F244B1B3600289409 /* ApplyForLeaveStep1ViewController.swift */; };
+		07547E62244B215D00289409 /* ApplyForLeaveStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07547E61244B215D00289409 /* ApplyForLeaveStep2ViewController.swift */; };
+		07547E8E244C57E300289409 /* TeamPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07547E8D244C57E300289409 /* TeamPlayerViewController.swift */; };
+		07547E90244C6BE300289409 /* TeamPlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07547E8F244C6BE300289409 /* TeamPlayerDetailViewController.swift */; };
+		07547E92244C797300289409 /* TeamStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07547E91244C797300289409 /* TeamStaffViewController.swift */; };
+		07547E94244C798900289409 /* TeamStaffDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07547E93244C798900289409 /* TeamStaffDetailViewController.swift */; };
+		0774D479244ECF56005442FE /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0774D478244ECF56005442FE /* LogOutViewController.swift */; };
+		0775A728244AE8EB00406725 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0775A727244AE8EB00406725 /* AttendanceViewController.swift */; };
+		9D89EFDD633C0D1FA94EF9DC /* Pods_myClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D7FA1DA8A1D73CF66023A1 /* Pods_myClub.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		071F10432449D29500D9509D /* StaffDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDetailViewController.swift; sourceTree = "<group>"; };
+		071F10452449EBB000D9509D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		072558E924480EB6004A26CE /* myClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		072558EC24480EB6004A26CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		072558EE24480EB6004A26CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		072558F024480EB6004A26CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		072558F324480EB6004A26CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		072558F624480EB6004A26CE /* myClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myClub.xcdatamodel; sourceTree = "<group>"; };
+		072558F824480EB7004A26CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		072558FB24480EB7004A26CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		072558FD24480EB7004A26CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0725590324483F19004A26CE /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		0725590C2448BAFC004A26CE /* WageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WageViewController.swift; sourceTree = "<group>"; };
+		0725591024497E3D004A26CE /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		07255912244986B0004A26CE /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
+		072DF33A2451A85800023AE0 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		072DF3412451C72400023AE0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		072DF3462451EFB100023AE0 /* MAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAccountViewController.swift; sourceTree = "<group>"; };
+		072DF3482451EFC500023AE0 /* MApplyForLeaveStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MApplyForLeaveStep1ViewController.swift; sourceTree = "<group>"; };
+		072DF34A2451EFCE00023AE0 /* MApplyForLeaveStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MApplyForLeaveStep2ViewController.swift; sourceTree = "<group>"; };
+		072DF34C2451EFD500023AE0 /* MAttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAttendanceViewController.swift; sourceTree = "<group>"; };
+		072DF34E2451EFDE00023AE0 /* MEventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEventDetailViewController.swift; sourceTree = "<group>"; };
+		072DF3502451EFEA00023AE0 /* MEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEventViewController.swift; sourceTree = "<group>"; };
+		072DF3522451EFF200023AE0 /* MStaffDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MStaffDetailViewController.swift; sourceTree = "<group>"; };
+		072DF3542451EFFE00023AE0 /* MStaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MStaffViewController.swift; sourceTree = "<group>"; };
+		072DF3562451F00500023AE0 /* MTeamPlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTeamPlayerDetailViewController.swift; sourceTree = "<group>"; };
+		072DF3582451F00D00023AE0 /* MAddContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAddContractViewController.swift; sourceTree = "<group>"; };
+		072DF35A2451F01200023AE0 /* MAddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAddEventViewController.swift; sourceTree = "<group>"; };
+		072DF35C2451F01800023AE0 /* MAddPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAddPlayerViewController.swift; sourceTree = "<group>"; };
+		072DF35E2451F01F00023AE0 /* MAddStaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAddStaffViewController.swift; sourceTree = "<group>"; };
+		072DF3602451F02700023AE0 /* MAddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAddTransactionViewController.swift; sourceTree = "<group>"; };
+		072DF3622451F02B00023AE0 /* MAttendanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAttendanceDetailViewController.swift; sourceTree = "<group>"; };
+		072DF3642451F03000023AE0 /* MChangeContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangeContractViewController.swift; sourceTree = "<group>"; };
+		072DF3662451F03600023AE0 /* MChangeEventChooseParticipantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangeEventChooseParticipantTableViewController.swift; sourceTree = "<group>"; };
+		072DF3682451F03D00023AE0 /* MChangeEventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangeEventDetailViewController.swift; sourceTree = "<group>"; };
+		072DF36A2451F04400023AE0 /* MChangePlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangePlayerDetailViewController.swift; sourceTree = "<group>"; };
+		072DF36C2451F04900023AE0 /* MChangeStaffDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangeStaffDetailViewController.swift; sourceTree = "<group>"; };
+		072DF36E2451F04E00023AE0 /* MChooseParticipantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChooseParticipantTableViewController.swift; sourceTree = "<group>"; };
+		072DF3702451F05600023AE0 /* MContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MContractViewController.swift; sourceTree = "<group>"; };
+		072DF3722451F05D00023AE0 /* MEditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEditAccountViewController.swift; sourceTree = "<group>"; };
+		072DF3742451F06300023AE0 /* MSalaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSalaryViewController.swift; sourceTree = "<group>"; };
+		072DF3762451F06800023AE0 /* MTeamPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTeamPlayerViewController.swift; sourceTree = "<group>"; };
+		072DF3782451F06D00023AE0 /* MTeamStaffDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTeamStaffDetailViewController.swift; sourceTree = "<group>"; };
+		072DF37A2451F07300023AE0 /* MTeamStaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTeamStaffViewController.swift; sourceTree = "<group>"; };
+		072DF37C2451F07800023AE0 /* MWageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWageViewController.swift; sourceTree = "<group>"; };
+		072DF37E2451F07D00023AE0 /* MTransactionDetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTransactionDetailInfoViewController.swift; sourceTree = "<group>"; };
+		072DF3802451F10100023AE0 /* MChangeAttendanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangeAttendanceDetailViewController.swift; sourceTree = "<group>"; };
+		072DF3822451F10600023AE0 /* MChangeTransactionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MChangeTransactionDetailViewController.swift; sourceTree = "<group>"; };
+		072DF3842451F10A00023AE0 /* MContractDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MContractDetailViewController.swift; sourceTree = "<group>"; };
+		072DF38D245211E100023AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StaffUserInterface.storyboard; sourceTree = "<group>"; };
+		072DF38F245211E100023AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ManagerUserInterface.storyboard; sourceTree = "<group>"; };
+		074E95D1244EEFAA00F93B8A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		074E95D5244EFD4C00F93B8A /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		074E95D7244EFD7000F93B8A /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		074E95D9244F474700F93B8A /* UpdateContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateContactViewController.swift; sourceTree = "<group>"; };
+		07547E5F244B1B3600289409 /* ApplyForLeaveStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyForLeaveStep1ViewController.swift; sourceTree = "<group>"; };
+		07547E61244B215D00289409 /* ApplyForLeaveStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyForLeaveStep2ViewController.swift; sourceTree = "<group>"; };
+		07547E8D244C57E300289409 /* TeamPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayerViewController.swift; sourceTree = "<group>"; };
+		07547E8F244C6BE300289409 /* TeamPlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayerDetailViewController.swift; sourceTree = "<group>"; };
+		07547E91244C797300289409 /* TeamStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStaffViewController.swift; sourceTree = "<group>"; };
+		07547E93244C798900289409 /* TeamStaffDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStaffDetailViewController.swift; sourceTree = "<group>"; };
+		0774D478244ECF56005442FE /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		0775A727244AE8EB00406725 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		243293E1A8260D09386195B9 /* Pods-myClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myClub.release.xcconfig"; path = "Target Support Files/Pods-myClub/Pods-myClub.release.xcconfig"; sourceTree = "<group>"; };
+		40711308ACC278EC4239D667 /* Pods-myClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myClub.debug.xcconfig"; path = "Target Support Files/Pods-myClub/Pods-myClub.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D7FA1DA8A1D73CF66023A1 /* Pods_myClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		072558E624480EB6004A26CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D89EFDD633C0D1FA94EF9DC /* Pods_myClub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072558E024480EB6004A26CE = {
+			isa = PBXGroup;
+			children = (
+				072558EB24480EB6004A26CE /* myClub */,
+				072558EA24480EB6004A26CE /* Products */,
+				CF40DF810A74480B29B7B9A0 /* Pods */,
+				79E7A2FA7FB8F560CED06987 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		072558EA24480EB6004A26CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				072558E924480EB6004A26CE /* myClub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		072558EB24480EB6004A26CE /* myClub */ = {
+			isa = PBXGroup;
+			children = (
+				072558EC24480EB6004A26CE /* AppDelegate.swift */,
+				072558EE24480EB6004A26CE /* SceneDelegate.swift */,
+				074E95D7244EFD7000F93B8A /* DateFormatter.swift */,
+				074E95D5244EFD4C00F93B8A /* Login.swift */,
+				072DF33A2451A85800023AE0 /* Validation.swift */,
+				072DF3412451C72400023AE0 /* DataManager.swift */,
+				072558F024480EB6004A26CE /* ViewController.swift */,
+				0725590324483F19004A26CE /* EventViewController.swift */,
+				0725591024497E3D004A26CE /* EventDetailViewController.swift */,
+				0775A727244AE8EB00406725 /* AttendanceViewController.swift */,
+				07547E5F244B1B3600289409 /* ApplyForLeaveStep1ViewController.swift */,
+				07547E61244B215D00289409 /* ApplyForLeaveStep2ViewController.swift */,
+				0725590C2448BAFC004A26CE /* WageViewController.swift */,
+				07255912244986B0004A26CE /* StaffViewController.swift */,
+				071F10432449D29500D9509D /* StaffDetailViewController.swift */,
+				07547E8D244C57E300289409 /* TeamPlayerViewController.swift */,
+				07547E8F244C6BE300289409 /* TeamPlayerDetailViewController.swift */,
+				07547E91244C797300289409 /* TeamStaffViewController.swift */,
+				07547E93244C798900289409 /* TeamStaffDetailViewController.swift */,
+				071F10452449EBB000D9509D /* AccountViewController.swift */,
+				074E95D1244EEFAA00F93B8A /* RegisterViewController.swift */,
+				0774D478244ECF56005442FE /* LogOutViewController.swift */,
+				074E95D9244F474700F93B8A /* UpdateContactViewController.swift */,
+				072DF38E245211E100023AE0 /* ManagerUserInterface.storyboard */,
+				072DF38C245211E100023AE0 /* StaffUserInterface.storyboard */,
+				072558F224480EB6004A26CE /* Main.storyboard */,
+				072DF3462451EFB100023AE0 /* MAccountViewController.swift */,
+				072DF3482451EFC500023AE0 /* MApplyForLeaveStep1ViewController.swift */,
+				072DF34A2451EFCE00023AE0 /* MApplyForLeaveStep2ViewController.swift */,
+				072DF34C2451EFD500023AE0 /* MAttendanceViewController.swift */,
+				072DF34E2451EFDE00023AE0 /* MEventDetailViewController.swift */,
+				072DF3502451EFEA00023AE0 /* MEventViewController.swift */,
+				072DF3522451EFF200023AE0 /* MStaffDetailViewController.swift */,
+				072DF3542451EFFE00023AE0 /* MStaffViewController.swift */,
+				072DF3562451F00500023AE0 /* MTeamPlayerDetailViewController.swift */,
+				072DF3582451F00D00023AE0 /* MAddContractViewController.swift */,
+				072DF35A2451F01200023AE0 /* MAddEventViewController.swift */,
+				072DF35C2451F01800023AE0 /* MAddPlayerViewController.swift */,
+				072DF35E2451F01F00023AE0 /* MAddStaffViewController.swift */,
+				072DF3602451F02700023AE0 /* MAddTransactionViewController.swift */,
+				072DF3622451F02B00023AE0 /* MAttendanceDetailViewController.swift */,
+				072DF3642451F03000023AE0 /* MChangeContractViewController.swift */,
+				072DF3662451F03600023AE0 /* MChangeEventChooseParticipantTableViewController.swift */,
+				072DF3682451F03D00023AE0 /* MChangeEventDetailViewController.swift */,
+				072DF36A2451F04400023AE0 /* MChangePlayerDetailViewController.swift */,
+				072DF36C2451F04900023AE0 /* MChangeStaffDetailViewController.swift */,
+				072DF36E2451F04E00023AE0 /* MChooseParticipantTableViewController.swift */,
+				072DF3702451F05600023AE0 /* MContractViewController.swift */,
+				072DF3722451F05D00023AE0 /* MEditAccountViewController.swift */,
+				072DF3742451F06300023AE0 /* MSalaryViewController.swift */,
+				072DF3762451F06800023AE0 /* MTeamPlayerViewController.swift */,
+				072DF3782451F06D00023AE0 /* MTeamStaffDetailViewController.swift */,
+				072DF37A2451F07300023AE0 /* MTeamStaffViewController.swift */,
+				072DF37C2451F07800023AE0 /* MWageViewController.swift */,
+				072DF37E2451F07D00023AE0 /* MTransactionDetailInfoViewController.swift */,
+				072DF3802451F10100023AE0 /* MChangeAttendanceDetailViewController.swift */,
+				072DF3822451F10600023AE0 /* MChangeTransactionDetailViewController.swift */,
+				072DF3842451F10A00023AE0 /* MContractDetailViewController.swift */,
+				072558F824480EB7004A26CE /* Assets.xcassets */,
+				072558FA24480EB7004A26CE /* LaunchScreen.storyboard */,
+				072558FD24480EB7004A26CE /* Info.plist */,
+				072558F524480EB6004A26CE /* myClub.xcdatamodeld */,
+			);
+			path = myClub;
+			sourceTree = "<group>";
+		};
+		79E7A2FA7FB8F560CED06987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D7FA1DA8A1D73CF66023A1 /* Pods_myClub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF40DF810A74480B29B7B9A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40711308ACC278EC4239D667 /* Pods-myClub.debug.xcconfig */,
+				243293E1A8260D09386195B9 /* Pods-myClub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		072558E824480EB6004A26CE /* myClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0725590024480EB7004A26CE /* Build configuration list for PBXNativeTarget "myClub" */;
+			buildPhases = (
+				CA482AEE50E31734242B282B /* [CP] Check Pods Manifest.lock */,
+				072558E524480EB6004A26CE /* Sources */,
+				072558E624480EB6004A26CE /* Frameworks */,
+				072558E724480EB6004A26CE /* Resources */,
+				41BA4E9678BE4BF224A37D4C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myClub;
+			productName = myClub;
+			productReference = 072558E924480EB6004A26CE /* myClub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		072558E124480EB6004A26CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Wenzhe Zhang";
+				TargetAttributes = {
+					072558E824480EB6004A26CE = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 072558E424480EB6004A26CE /* Build configuration list for PBXProject "myClub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 072558E024480EB6004A26CE;
+			productRefGroup = 072558EA24480EB6004A26CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				072558E824480EB6004A26CE /* myClub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		072558E724480EB6004A26CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072DF390245211E100023AE0 /* StaffUserInterface.storyboard in Resources */,
+				072558FC24480EB7004A26CE /* LaunchScreen.storyboard in Resources */,
+				072558F924480EB7004A26CE /* Assets.xcassets in Resources */,
+				072558F424480EB6004A26CE /* Main.storyboard in Resources */,
+				072DF391245211E100023AE0 /* ManagerUserInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41BA4E9678BE4BF224A37D4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myClub/Pods-myClub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myClub/Pods-myClub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myClub/Pods-myClub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA482AEE50E31734242B282B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myClub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		072558E524480EB6004A26CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07547E62244B215D00289409 /* ApplyForLeaveStep2ViewController.swift in Sources */,
+				072DF34B2451EFCE00023AE0 /* MApplyForLeaveStep2ViewController.swift in Sources */,
+				072DF3532451EFF200023AE0 /* MStaffDetailViewController.swift in Sources */,
+				072DF3852451F10A00023AE0 /* MContractDetailViewController.swift in Sources */,
+				072DF3792451F06D00023AE0 /* MTeamStaffDetailViewController.swift in Sources */,
+				072DF3812451F10100023AE0 /* MChangeAttendanceDetailViewController.swift in Sources */,
+				072DF3422451C72400023AE0 /* DataManager.swift in Sources */,
+				071F10442449D29500D9509D /* StaffDetailViewController.swift in Sources */,
+				0725590424483F19004A26CE /* EventViewController.swift in Sources */,
+				072DF36D2451F04900023AE0 /* MChangeStaffDetailViewController.swift in Sources */,
+				0774D479244ECF56005442FE /* LogOutViewController.swift in Sources */,
+				072DF3492451EFC500023AE0 /* MApplyForLeaveStep1ViewController.swift in Sources */,
+				072DF3512451EFEA00023AE0 /* MEventViewController.swift in Sources */,
+				07547E92244C797300289409 /* TeamStaffViewController.swift in Sources */,
+				072DF37D2451F07800023AE0 /* MWageViewController.swift in Sources */,
+				072558F124480EB6004A26CE /* ViewController.swift in Sources */,
+				0775A728244AE8EB00406725 /* AttendanceViewController.swift in Sources */,
+				072DF3692451F03D00023AE0 /* MChangeEventDetailViewController.swift in Sources */,
+				072DF3752451F06300023AE0 /* MSalaryViewController.swift in Sources */,
+				074E95D8244EFD7000F93B8A /* DateFormatter.swift in Sources */,
+				072DF3672451F03600023AE0 /* MChangeEventChooseParticipantTableViewController.swift in Sources */,
+				072DF36F2451F04F00023AE0 /* MChooseParticipantTableViewController.swift in Sources */,
+				072DF35B2451F01200023AE0 /* MAddEventViewController.swift in Sources */,
+				07547E8E244C57E300289409 /* TeamPlayerViewController.swift in Sources */,
+				074E95D6244EFD4C00F93B8A /* Login.swift in Sources */,
+				072558ED24480EB6004A26CE /* AppDelegate.swift in Sources */,
+				072558EF24480EB6004A26CE /* SceneDelegate.swift in Sources */,
+				072DF3712451F05600023AE0 /* MContractViewController.swift in Sources */,
+				0725590D2448BAFC004A26CE /* WageViewController.swift in Sources */,
+				07547E90244C6BE300289409 /* TeamPlayerDetailViewController.swift in Sources */,
+				072DF37F2451F07D00023AE0 /* MTransactionDetailInfoViewController.swift in Sources */,
+				072DF34D2451EFD600023AE0 /* MAttendanceViewController.swift in Sources */,
+				072DF3732451F05D00023AE0 /* MEditAccountViewController.swift in Sources */,
+				072DF3612451F02700023AE0 /* MAddTransactionViewController.swift in Sources */,
+				074E95D2244EEFAA00F93B8A /* RegisterViewController.swift in Sources */,
+				072DF3552451EFFE00023AE0 /* MStaffViewController.swift in Sources */,
+				07547E60244B1B3600289409 /* ApplyForLeaveStep1ViewController.swift in Sources */,
+				072DF3572451F00500023AE0 /* MTeamPlayerDetailViewController.swift in Sources */,
+				072DF35F2451F01F00023AE0 /* MAddStaffViewController.swift in Sources */,
+				071F10462449EBB000D9509D /* AccountViewController.swift in Sources */,
+				0725591124497E3D004A26CE /* EventDetailViewController.swift in Sources */,
+				072558F724480EB6004A26CE /* myClub.xcdatamodeld in Sources */,
+				072DF3652451F03000023AE0 /* MChangeContractViewController.swift in Sources */,
+				07255913244986B0004A26CE /* StaffViewController.swift in Sources */,
+				072DF36B2451F04400023AE0 /* MChangePlayerDetailViewController.swift in Sources */,
+				074E95DA244F474700F93B8A /* UpdateContactViewController.swift in Sources */,
+				072DF34F2451EFDE00023AE0 /* MEventDetailViewController.swift in Sources */,
+				072DF35D2451F01800023AE0 /* MAddPlayerViewController.swift in Sources */,
+				072DF3632451F02B00023AE0 /* MAttendanceDetailViewController.swift in Sources */,
+				072DF3832451F10600023AE0 /* MChangeTransactionDetailViewController.swift in Sources */,
+				072DF3592451F00D00023AE0 /* MAddContractViewController.swift in Sources */,
+				072DF33B2451A85800023AE0 /* Validation.swift in Sources */,
+				07547E94244C798900289409 /* TeamStaffDetailViewController.swift in Sources */,
+				072DF3472451EFB100023AE0 /* MAccountViewController.swift in Sources */,
+				072DF3772451F06800023AE0 /* MTeamPlayerViewController.swift in Sources */,
+				072DF37B2451F07300023AE0 /* MTeamStaffViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		072558F224480EB6004A26CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072558F324480EB6004A26CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		072558FA24480EB7004A26CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072558FB24480EB7004A26CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		072DF38C245211E100023AE0 /* StaffUserInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072DF38D245211E100023AE0 /* Base */,
+			);
+			name = StaffUserInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		072DF38E245211E100023AE0 /* ManagerUserInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072DF38F245211E100023AE0 /* Base */,
+			);
+			name = ManagerUserInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		072558FE24480EB7004A26CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		072558FF24480EB7004A26CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0725590124480EB7004A26CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40711308ACC278EC4239D667 /* Pods-myClub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = myClub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenzhezhang.myClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0725590224480EB7004A26CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243293E1A8260D09386195B9 /* Pods-myClub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = myClub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenzhezhang.myClub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		072558E424480EB6004A26CE /* Build configuration list for PBXProject "myClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072558FE24480EB7004A26CE /* Debug */,
+				072558FF24480EB7004A26CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0725590024480EB7004A26CE /* Build configuration list for PBXNativeTarget "myClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0725590124480EB7004A26CE /* Debug */,
+				0725590224480EB7004A26CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		072558F524480EB6004A26CE /* myClub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				072558F624480EB6004A26CE /* myClub.xcdatamodel */,
+			);
+			currentVersion = 072558F624480EB6004A26CE /* myClub.xcdatamodel */;
+			path = myClub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 072558E124480EB6004A26CE /* Project object */;
+}
